@@ -4,17 +4,17 @@
 $score = 50;
 
 
+$level = "A";
 
 
-
-if ($score >= 90) {
-  echo "A";
+if ($score >= 60) {
+  $level= "A";
 } else if ($score >= 75) {
-  echo "B";
+  $level= "B";
 } else if ($score >= 60) {
-  echo "C";
+  $level="C";
 } else {
-  echo "D";
+  $level="D";
 }
 
 //閏年判斷
@@ -34,7 +34,7 @@ if ($year % 4 == 0 && ($year % 100 != 0 or $year % 400 == 0)) {
   echo "平年";
 }
 
-$level = "A";
+
 echo "等級:" . $level;
 echo "<br>";
 
