@@ -17,9 +17,13 @@ if ($score >= 60) {
   $level="D";
 }
 
+
+
+
 //閏年判斷
 
 echo "<hr>";
+
 $year = 2000;
 echo "西元年:" . $year;
 echo "<br>";
@@ -53,6 +57,12 @@ switch ($level) {
     break;
 
 }
+echo "<hr>";
+
+//三元運算子
+$result=($score>=60)? "及格":"不及格";
+echo $result;
+echo "<hr>";
 
 
 ?>
